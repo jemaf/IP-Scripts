@@ -15,8 +15,8 @@ def main(argv):
 
     with open(fileName) as file: 
         for line in file:
-            username = line.split("\t")[0]
-            email = line.split("\t")[1]
+            username = line.split(";")[0]
+            email = line.split(";")[1]
 
             print "Processing student: " + username
             createFolder(path, username)
